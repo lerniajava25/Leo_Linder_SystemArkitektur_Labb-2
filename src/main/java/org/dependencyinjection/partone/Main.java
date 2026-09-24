@@ -1,5 +1,9 @@
 package org.dependencyinjection.partone;
 
+import org.dependencyinjection.partone.musicplayer.CdPlayer;
+import org.dependencyinjection.partone.musicplayer.MusicPlayer;
+import org.dependencyinjection.partone.speaker.BasicSpeaker;
+
 public class Main {
     static void main(String[] args){
         BasicSpeaker speaker = new BasicSpeaker();

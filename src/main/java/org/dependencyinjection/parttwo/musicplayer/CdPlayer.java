@@ -1,10 +1,12 @@
-package org.dependencyinjection.partone;
+package org.dependencyinjection.parttwo.musicplayer;
 
-public class CdPlayer implements MusicPlayer{
+import org.dependencyinjection.parttwo.speaker.Speaker;
+
+public class CdPlayer implements MusicPlayer {
 
     private final Speaker speaker;
 
-    CdPlayer(Speaker speaker){
+    public CdPlayer(Speaker speaker){
         this.speaker = speaker;
     }
 

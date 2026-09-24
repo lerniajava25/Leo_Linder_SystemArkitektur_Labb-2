@@ -1,12 +1,12 @@
-package org.dependencyinjection.partone;
+package org.dependencyinjection.parttwo;
 
-import org.dependencyinjection.partone.musicplayer.MusicPlayer;
+import org.dependencyinjection.parttwo.musicplayer.MusicPlayer;
 
 public class Stereo {
 
     private final MusicPlayer musicPlayer;
 
-    Stereo(MusicPlayer musicPlayer){
+    public Stereo(MusicPlayer musicPlayer){
         this.musicPlayer = musicPlayer;
     }
 

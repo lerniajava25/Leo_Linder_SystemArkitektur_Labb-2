@@ -1,4 +1,4 @@
-package org.dependencyinjection.partone;
+package org.dependencyinjection.partone.speaker;
 
 public interface Speaker {
     String turnOn();

@@ -1,4 +1,4 @@
-package org.dependencyinjection.partone;
+package org.dependencyinjection.parttwo.musicplayer;
 
 public interface MusicPlayer {
     String play();

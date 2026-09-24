@@ -1,6 +1,6 @@
-package org.dependencyinjection.partone;
+package org.dependencyinjection.partone.speaker;
 
-public class BasicSpeaker implements Speaker{
+public class BasicSpeaker implements Speaker {
 
     @Override
     public String turnOn() {
