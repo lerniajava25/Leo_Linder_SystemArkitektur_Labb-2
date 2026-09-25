@@ -12,16 +12,16 @@ public class RadioPlayer implements MusicPlayer {
 
     @Override
     public String play() {
-        return speaker.turnOn() + " Radio is playing.";
+       return speaker.turnOn() + " Radio is playing.";
     }
 
     @Override
     public String lowerVolume() {
-        return speaker.lowerVolume() + " on radio.";
+       return speaker.lowerVolume() + " on radio.";
     }
 
     @Override
     public String raiseVolume() {
-        return speaker.raiseVolume() + " on radio.";
+       return speaker.raiseVolume() + " on radio.";
     }
 }

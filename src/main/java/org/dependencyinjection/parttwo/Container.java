@@ -8,7 +8,10 @@ import java.util.Map;
 public class Container {
 
     private final Map<Class<?>, Class<?>> bindings = new HashMap<>();
-
+    /**
+     * Creates an instance of the requested type and recursively resolves
+     * its constructor dependencies.
+     */
     public <T> T getInstance(Class<T> type) {
 
         Class<?> implementation = bindings.get(type);
@@ -17,10 +20,12 @@ public class Container {
             implementation = type;
         }
 
+        // We assume that each implementation has one public constructor.
         Constructor<?> constructor = implementation.getConstructors()[0];
         Class<?>[] parameterTypes = constructor.getParameterTypes();
         Object[] dependencies = new Object[parameterTypes.length];
 
+        // Recursively resolve each constructor dependency.
         for (int i = 0; i < parameterTypes.length; i++) {
             dependencies[i] = getInstance(parameterTypes[i]);
         }
